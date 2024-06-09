@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>ВизиоЛидеры</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="Free HTML Templates" name="keywords" />
+        <meta content="Free HTML Templates" name="description" />
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon" />
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Icon Font Stylesheet -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+
+        <!-- Libraries Stylesheet -->
+        <link
+            href="lib/owlcarousel/assets/owl.carousel.min.css"
+            rel="stylesheet"
+        />
+        <link href="lib/animate/animate.min.css" rel="stylesheet" />
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div
+            id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+        >
+            <div class="spinner"></div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar & Carousel Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+                <a href="index.html" class="navbar-brand p-0">
+                    <h1 class="m-0">ВизиоЛидеры</h1>
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse"
+                >
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active"
+                            >Главная</a
+                        >
+                        <a href="about.html" class="nav-item nav-link"
+                            >Новости</a
+                        >
+                        <a href="service.html" class="nav-item nav-link"
+                            >Блог</a
+                        >
+                        <a href="blog.html" class="nav-item nav-link">Услуги</a>
+                        <a href="contact.html" class="nav-item nav-link"
+                            >Контакты</a
+                        >
+                    </div>
+                </div>
+            </nav>
+
+            <div
+                id="header-carousel"
+                class="carousel slide carousel-fade"
+                data-bs-ride="carousel"
+            >
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img
+                            class="w-100"
+                            src="img/carousel-1.jpg"
+                            alt="Изображение"
+                        />
+                        <div
+                            class="carousel-caption d-flex flex-column align-items-center justify-content-center"
+                        >
+                            <div class="p-3" style="max-width: 900px">
+                                <h5
+                                    class="text-white text-uppercase mb-3 animated slideInDown"
+                                >
+                                    Получите доступ к инновационным технологиям
+                                    и возможностям торговли на бирже Nasdaq.
+                                </h5>
+                                <h1
+                                    class="display-1 text-white mb-md-4 animated zoomIn"
+                                >
+                                    Платформа для инвестиций в финтех
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            class="w-100"
+                            src="img/carousel-2.jpg"
+                            alt="Изображение"
+                        />
+                        <div
+                            class="carousel-caption d-flex flex-column align-items-center justify-content-center"
+                        >
+                            <div class="p-3" style="max-width: 900px">
+                                <h5
+                                    class="text-white text-uppercase mb-3 animated slideInDown"
+                                >
+                                    Узнайте о новейших разработках и трендах на
+                                    бирже.
+                                </h5>
+                                <h1
+                                    class="display-1 text-white mb-md-4 animated zoomIn"
+                                >
+                                    Инновации на рынке акций
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#header-carousel"
+                    data-bs-slide="prev"
+                >
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#header-carousel"
+                    data-bs-slide="next"
+                >
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Следующий</span>
+                </button>
+            </div>
+        </div>
+        <!-- Navbar & Carousel End -->
+
+        <!-- Full Screen Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div
+                    class="modal-content"
+                    style="background: rgba(9, 30, 62, 0.7)"
+                >
+                    <div class="modal-header border-0">
+                        <button
+                            type="button"
+                            class="btn bg-white btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div
+                        class="modal-body d-flex align-items-center justify-content-center"
+                    >
+                        <div class="input-group" style="max-width: 600px">
+                            <input
+                                type="text"
+                                class="form-control bg-transparent border-primary p-3"
+                                placeholder="Type search keyword"
+                            />
+                            <button class="btn btn-primary px-4">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Full Screen Search End -->
+
+        <!-- Facts Start -->
+        <div class="container-fluid facts py-5 pt-lg-0">
+            <div class="container py-5 pt-lg-0">
+                <div class="row gx-0">
+                    <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
+                        <div
+                            class="bg-primary shadow d-flex align-items-center justify-content-center p-4"
+                            style="height: 150px"
+                        >
+                            <div
+                                class="bg-white d-flex align-items-center justify-content-center rounded mb-2"
+                                style="width: 60px; height: 60px"
+                            >
+                                <i class="fa fa-users text-primary"></i>
+                            </div>
+                            <div class="ps-4">
+                                <h5 class="text-white mb-0">
+                                    Довольные клиенты
+                                </h5>
+                                <h1
+                                    class="text-white mb-0"
+                                    data-toggle="counter-up"
+                                >
+                                    712
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
+                        <div
+                            class="bg-light shadow d-flex align-items-center justify-content-center p-4"
+                            style="height: 150px"
+                        >
+                            <div
+                                class="bg-primary d-flex align-items-center justify-content-center rounded mb-2"
+                                style="width: 60px; height: 60px"
+                            >
+                                <i class="fa fa-check text-white"></i>
+                            </div>
+                            <div class="ps-4">
+                                <h5 class="text-primary mb-0">
+                                    Завершенные проекты
+                                </h5>
+                                <h1 class="mb-0" data-toggle="counter-up">
+                                    55
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
+                        <div
+                            class="bg-primary shadow d-flex align-items-center justify-content-center p-4"
+                            style="height: 150px"
+                        >
+                            <div
+                                class="bg-white d-flex align-items-center justify-content-center rounded mb-2"
+                                style="width: 60px; height: 60px"
+                            >
+                                <i class="fa fa-award text-primary"></i>
+                            </div>
+                            <div class="ps-4">
+                                <h5 class="text-white mb-0">
+                                    Полученные награды
+                                </h5>
+                                <h1
+                                    class="text-white mb-0"
+                                    data-toggle="counter-up"
+                                >
+                                    132
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Facts Start -->
+
+        <!-- About Start -->
+        <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-7">
+                        <div class="section-title position-relative pb-3 mb-5">
+                            <h5 class="fw-bold text-primary text-uppercase">
+                                О нас
+                            </h5>
+                            <h1 class="mb-0">
+                                Мы предлагаем инновационные решения в области
+                                консалтинга
+                            </h1>
+                        </div>
+                        <p class="mb-4">
+                            Мы - команда профессионалов, специализирующаяся на
+                            предоставлении консультационных услуг в сфере
+                            финтех. Наша цель - помочь вам максимально
+                            эффективно использовать возможности финансовых
+                            рынков и технологий. Мы работаем с ведущими биржами,
+                            такими как Nasdaq, и помогаем нашим клиентам
+                            принимать обоснованные инвестиционные решения,
+                            управлять проектами и достигать новых высот в своих
+                            финансовых стратегиях. Наша платформа предоставляет
+                            доступ к новейшим технологиям и инновациям, которые
+                            позволяют нашим клиентам быть на шаг впереди в
+                            постоянно меняющемся мире финансов. Мы предлагаем
+                            комплексные решения для анализа и управления
+                            акциями, а также поддержки и реализации
+                            финтех-проектов любой сложности. С нами вы получите
+                            доступ к экспертным знаниям и современным
+                            инструментам, которые помогут вам достичь успеха на
+                            рынке.
+                        </p>
+                        <div class="row g-0 mb-3">
+                            <div
+                                class="col-sm-6 wow zoomIn"
+                                data-wow-delay="0.2s"
+                            >
+                                <h5 class="mb-3">
+                                    <i class="fa fa-check text-primary me-3"></i
+                                    >Партнерство с ведущими биржами
+                                </h5>
+                                <h5 class="mb-3">
+                                    <i class="fa fa-check text-primary me-3"></i
+                                    >Инновационные финтех-решения
+                                </h5>
+                            </div>
+                            <div
+                                class="col-sm-6 wow zoomIn"
+                                data-wow-delay="0.4s"
+                            >
+                                <h5 class="mb-3">
+                                    <i class="fa fa-check text-primary me-3"></i
+                                    >Успешные проекты
+                                </h5>
+                                <h5 class="mb-3">
+                                    <i class="fa fa-check text-primary me-3"></i
+                                    >Экспертный анализ и поддержка
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5" style="min-height: 500px">
+                        <div class="position-relative h-100">
+                            <img
+                                class="position-absolute w-100 h-100 rounded wow zoomIn"
+                                data-wow-delay="0.9s"
+                                src="img/about.jpg"
+                                style="object-fit: cover"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Features Start -->
+        <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div
+                    class="section-title text-center position-relative pb-3 mb-5 mx-auto"
+                    style="max-width: 600px"
+                >
+                    <h5 class="fw-bold text-primary text-uppercase">
+                        Почему выбрать нас?
+                    </h5>
+                    <h1 class="mb-0">
+                        Почему выбирают нас для консалтинговых услуг в сфере
+                        финтех
+                    </h1>
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-4">
+                        <div class="row g-5">
+                            <div
+                                class="col-12 wow zoomIn"
+                                data-wow-delay="0.2s"
+                            >
+                                <div
+                                    class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                                    style="width: 60px; height: 60px"
+                                >
+                                    <i class="fa fa-cubes text-white"></i>
+                                </div>
+                                <h4>
+                                    Доступ к передовым технологиям и инновациям
+                                </h4>
+                                <p class="mb-0">
+                                    Мы предоставляем нашим клиентам доступ к
+                                    новейшим финтех-технологиям и инновациям,
+                                    что позволяет быть на шаг впереди
+                                    конкурентов и эффективно управлять своими
+                                    инвестициями и проектами.
+                                </p>
+                            </div>
+                            <div
+                                class="col-12 wow zoomIn"
+                                data-wow-delay="0.6s"
+                            >
+                                <div
+                                    class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                                    style="width: 60px; height: 60px"
+                                >
+                                    <i class="fa fa-award text-white"></i>
+                                </div>
+                                <h4>Партнерство с ведущими биржами</h4>
+                                <p class="mb-0">
+                                    Наши клиенты получают привилегированный
+                                    доступ к таким мировым биржам, как Nasdaq,
+                                    что открывает перед ними широкие возможности
+                                    для торговли акциями и реализации финансовых
+                                    стратегий.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-4 wow zoomIn"
+                        data-wow-delay="0.9s"
+                        style="min-height: 350px"
+                    >
+                        <div class="position-relative h-100">
+                            <img
+                                class="position-absolute w-100 h-100 rounded wow zoomIn"
+                                data-wow-delay="0.1s"
+                                src="img/feature.jpg"
+                                style="object-fit: cover"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="row g-5">
+                            <div
+                                class="col-12 wow zoomIn"
+                                data-wow-delay="0.4s"
+                            >
+                                <div
+                                    class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                                    style="width: 60px; height: 60px"
+                                >
+                                    <i class="fa fa-users-cog text-white"></i>
+                                </div>
+                                <h4>Индивидуальный подход и поддержка</h4>
+                                <p class="mb-0">
+                                    Каждый проект, будь то инвестиции в акции
+                                    или запуск нового финтех-продукта,
+                                    сопровождается нашей экспертной поддержкой и
+                                    анализом, что гарантирует успех и достижение
+                                    поставленных целей.
+                                </p>
+                            </div>
+                            <div
+                                class="col-12 wow zoomIn"
+                                data-wow-delay="0.8s"
+                            >
+                                <div
+                                    class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                                    style="width: 60px; height: 60px"
+                                >
+                                    <i class="fa fa-phone-alt text-white"></i>
+                                </div>
+                                <h4>
+                                    Комплексные решения для управления проектами
+                                </h4>
+                                <p class="mb-0">
+                                    Мы предлагаем комплексные платформы и
+                                    инструменты для управления проектами любой
+                                    сложности, обеспечивая полный цикл от идеи
+                                    до реализации и последующего развития.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features Start -->
+
+        <!-- Testimonial Start -->
+        <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div
+                    class="section-title text-center position-relative pb-3 mb-4 mx-auto"
+                    style="max-width: 600px"
+                >
+                    <h5 class="fw-bold text-primary text-uppercase">
+                        Отзывы клиентов
+                    </h5>
+                    <h1 class="mb-0">
+                        Что говорят наши клиенты о наших цифровых услугах
+                    </h1>
+                </div>
+                <div
+                    class="owl-carousel testimonial-carousel wow fadeInUp"
+                    data-wow-delay="0.6s"
+                >
+                    <div class="testimonial-item bg-light my-4">
+                        <div
+                            class="d-flex align-items-center border-bottom pt-5 pb-4 px-5"
+                        >
+                            <img
+                                class="img-fluid rounded"
+                                src="img/testimonial-1.jpg"
+                                style="width: 60px; height: 60px"
+                            />
+                            <div class="ps-4">
+                                <h4 class="text-primary mb-1">Елена К.</h4>
+                            </div>
+                        </div>
+                        <div class="pt-4 pb-5 px-5">
+                            Спасибо за профессиональную помощь в планировании
+                            моих инвестиций. Благодаря вашим рекомендациям, я
+                            смогла добиться финансовой независимости и
+                            обеспечить свое будущее.
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light my-4">
+                        <div
+                            class="d-flex align-items-center border-bottom pt-5 pb-4 px-5"
+                        >
+                            <img
+                                class="img-fluid rounded"
+                                src="img/testimonial-2.jpg"
+                                style="width: 60px; height: 60px"
+                            />
+                            <div class="ps-4">
+                                <h4 class="text-primary mb-1">Александр П.</h4>
+                            </div>
+                        </div>
+                        <div class="pt-4 pb-5 px-5">
+                            Очень доволен услугами вашего инвестиционного
+                            консультанта. Он помог мне разработать долгосрочные
+                            инвестиционные стратегии, которые принесли отличные
+                            результаты.
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light my-4">
+                        <div
+                            class="d-flex align-items-center border-bottom pt-5 pb-4 px-5"
+                        >
+                            <img
+                                class="img-fluid rounded"
+                                src="img/testimonial-3.jpg"
+                                style="width: 60px; height: 60px"
+                            />
+                            <div class="ps-4">
+                                <h4 class="text-primary mb-1">Мария С.</h4>
+                            </div>
+                        </div>
+                        <div class="pt-4 pb-5 px-5">
+                            Спасибо за отличную инвестиционную помощь! Благодаря
+                            вашим рекомендациям, я смогла увеличить доходность
+                            своего инвестиционного портфеля и достичь своих
+                            финансовых целей.
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light my-4">
+                        <div
+                            class="d-flex align-items-center border-bottom pt-5 pb-4 px-5"
+                        >
+                            <img
+                                class="img-fluid rounded"
+                                src="img/testimonial-4.jpg"
+                                style="width: 60px; height: 60px"
+                            />
+                            <div class="ps-4">
+                                <h4 class="text-primary mb-1">Андрей И.</h4>
+                            </div>
+                        </div>
+                        <div class="pt-4 pb-5 px-5">
+                            Профессиональный подход и качественные консультации
+                            по инвестициям. Очень рекомендую вашу компанию всем,
+                            кто стремится к финансовой независимости и успешному
+                            управлению своими инвестициями.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+        <!-- Team Start -->
+        <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div
+                    class="section-title text-center position-relative pb-3 mb-5 mx-auto"
+                    style="max-width: 600px"
+                >
+                    <h5 class="fw-bold text-primary text-uppercase">
+                        ЧЛЕНЫ КОМАНДЫ
+                    </h5>
+                    <h1 class="mb-0">
+                        Профессиональные вещи, готовые помочь вашему бизнесу
+                    </h1>
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                        <div class="team-item bg-light rounded overflow-hidden">
+                            <div
+                                class="team-img position-relative overflow-hidden"
+                            >
+                                <img
+                                    class="img-fluid w-100"
+                                    src="img/team-1.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="text-center py-4">
+                                <h4 class="text-primary">Алексей Ларіонов</h4>
+                                <p class="text-uppercase m-0">
+                                    Менеджер по развитию
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                        <div class="team-item bg-light rounded overflow-hidden">
+                            <div
+                                class="team-img position-relative overflow-hidden"
+                            >
+                                <img
+                                    class="img-fluid w-100"
+                                    src="img/team-2.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="text-center py-4">
+                                <h4 class="text-primary">Екатерина Макарова</h4>
+                                <p class="text-uppercase m-0">
+                                    Финансовый аналитик
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+                        <div class="team-item bg-light rounded overflow-hidden">
+                            <div
+                                class="team-img position-relative overflow-hidden"
+                            >
+                                <img
+                                    class="img-fluid w-100"
+                                    src="img/team-3.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="text-center py-4">
+                                <h4 class="text-primary">Иван Маковецький</h4>
+                                <p class="text-uppercase m-0">
+                                    Главный инвестиционный консультант
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+        <!-- Footer Start -->
+        <div
+            class="container-fluid bg-dark text-light mt-5 wow fadeInUp"
+            data-wow-delay="0.1s"
+        >
+            <div class="container">
+                <div class="row gx-5">
+                    <div class="col-lg-12">
+                        <div class="row gx-5">
+                            <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                                <div
+                                    class="section-title section-title-sm position-relative pb-3 mb-4"
+                                >
+                                    <h3 class="text-light mb-0">О Нас</h3>
+                                </div>
+                                <p>
+                                    Мы стремимся помочь нашим клиентам достичь
+                                    финансовой независимости через разумные и
+                                    долгосрочные инвестиционные стратегии.
+                                </p>
+                            </div>
+                            <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                                <div
+                                    class="section-title section-title-sm position-relative pb-3 mb-4"
+                                >
+                                    <h3 class="text-light mb-0">
+                                        Свяжитесь с нами
+                                    </h3>
+                                </div>
+                                <div class="d-flex mb-2">
+                                    <i
+                                        class="bi bi-geo-alt text-primary me-2"
+                                    ></i>
+                                    <p class="mb-0">
+                                        Shepetkov str 11, Алматы 050035,
+                                        Казахстан
+                                    </p>
+                                </div>
+                                <div class="d-flex mb-2">
+                                    <i
+                                        class="bi bi-envelope-open text-primary me-2"
+                                    ></i>
+                                    <p class="mb-0">visio_leaders@gmail.com</p>
+                                </div>
+                                <div class="d-flex mb-2">
+                                    <i
+                                        class="bi bi-telephone text-primary me-2"
+                                    ></i>
+                                    <p class="mb-0">+77273036593</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                                <div
+                                    class="section-title section-title-sm position-relative pb-3 mb-4"
+                                >
+                                    <h3 class="text-light mb-0">
+                                        Быстрые ссылки
+                                    </h3>
+                                </div>
+                                <div
+                                    class="link-animated d-flex flex-column justify-content-start"
+                                >
+                                    <a class="text-light mb-2" href="index.html"
+                                        ><i
+                                            class="bi bi-arrow-right text-primary me-2"
+                                        ></i
+                                        >Главная</a
+                                    >
+                                    <a class="text-light mb-2" href="about.html"
+                                        ><i
+                                            class="bi bi-arrow-right text-primary me-2"
+                                        ></i
+                                        >Новости</a
+                                    >
+                                    <a
+                                        class="text-light mb-2"
+                                        href="service.html"
+                                        ><i
+                                            class="bi bi-arrow-right text-primary me-2"
+                                        ></i
+                                        >Блог</a
+                                    >
+                                    <a
+                                        class="text-light mb-2"
+                                        href="contact.html"
+                                        ><i
+                                            class="bi bi-arrow-right text-primary me-2"
+                                        ></i
+                                        >Контакты</a
+                                    >
+                                    <a
+                                        class="text-light mb-2"
+                                        href="privacy-policy.html"
+                                        ><i
+                                            class="bi bi-arrow-right text-primary me-2"
+                                        ></i
+                                        >Политика конфиденциальности</a
+                                    >
+                                    <a
+                                        class="text-light"
+                                        href="terms-of-use.html"
+                                        ><i
+                                            class="bi bi-arrow-right text-primary me-2"
+                                        ></i
+                                        >Условия и положения</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a
+            href="#"
+            class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"
+            ><i class="bi bi-arrow-up"></i
+        ></a>
+
+        <!-- Cookie banner -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2 style="text-align: center">
+                    Согласие на использование файлов cookie
+                </h2>
+            </div>
+            <div class="data">
+                <p>
+                    Этот веб-сайт использует файлы cookie, чтобы обеспечить вам
+                    более качественный и релевантный опыт просмотра на сайте.
+                    <a href="#">Узнать больше...</a>
+                </p>
+            </div>
+
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">Принять</button>
+                <button class="cookie-button" id="declineBtn">Отклонить</button>
+            </div>
+        </div>
+        <!-- End Cookie banner -->
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script src="js/contact-form.js"></script>
+        <script src="js/cookiebanner.js"></script>
+    </body>
+</html>
